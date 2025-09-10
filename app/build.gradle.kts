@@ -57,6 +57,29 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.recyclerview)
+    implementation(libs.glide)
+
+    implementation(libs.core.splashscreen)
+    implementation(libs.room.runtime)
+
+
+    annotationProcessor(libs.compiler)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.database)
+    implementation(libs.libphonenumber)
+
+    implementation(libs.play.services.location)
+
+    implementation(libs.firebase.ai)
+
+    implementation(libs.guava)
+
+    implementation(libs.reactive.streams)
+
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
