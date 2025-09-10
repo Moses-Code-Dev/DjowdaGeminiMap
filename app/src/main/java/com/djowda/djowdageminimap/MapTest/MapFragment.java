@@ -61,6 +61,9 @@ public class MapFragment extends Fragment implements GridAdapter.ItemClickListen
 //    private EditText etCellId;
 //    private Button btnNavigate;
 
+    private EditText etAiChat;
+    private Button btnSendMessage;
+
     // Statistics counters
     private int[] stats = new int[9]; // 0: Users, 1: DeliveryMen, 2: Stores, etc.
 
@@ -89,6 +92,10 @@ public class MapFragment extends Fragment implements GridAdapter.ItemClickListen
 //        etCellId = view.findViewById(R.id.etCellId);
 //        btnNavigate = view.findViewById(R.id.btnNavigate);
 
+        etAiChat = view.findViewById(R.id.etAiChat);
+        btnSendMessage = view.findViewById(R.id.btnSendMessage);
+
+
 //        btnNavigate.setOnClickListener(view1 -> {
 //            String cellIdText = etCellId.getText().toString().trim();
 //            if (!cellIdText.isEmpty()) {
@@ -103,6 +110,22 @@ public class MapFragment extends Fragment implements GridAdapter.ItemClickListen
 //
 //            generateRandomComponents();
 //        });
+
+
+        btnSendMessage.setOnClickListener(view1 -> {
+
+            // TODO: 10/09/2025 >> send prompt to Ai and use the respond to call the navigateToCell
+            //  with "GeoToCellNumber" as parameter (the cellId is the returned value)
+            //  the Ai respond should be a real coordinate
+            //  flow example: navigate to Eiffel Tower >> Ai respond should be lan and lat >> we gonna use this
+            //  lan and lat for function calling
+
+            // for now we gonna start by a simple test of function calling to test the Api request by just printing the
+            // the respond in the console log
+
+
+            generateRandomComponents();
+        });
 
         setupRecyclerView();
 
