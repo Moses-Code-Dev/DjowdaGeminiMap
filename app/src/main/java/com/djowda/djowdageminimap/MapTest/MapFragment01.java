@@ -48,7 +48,7 @@ import java.util.List;
 import java.util.Random;
 
 
-public class MapFragment extends Fragment implements GridAdapter.ItemClickListener {
+public class MapFragment01 extends Fragment implements GridAdapter.ItemClickListener {
     private RecyclerView recyclerView;
     private Custom2DScrollView scrollView;
     private GridAdapter adapter;

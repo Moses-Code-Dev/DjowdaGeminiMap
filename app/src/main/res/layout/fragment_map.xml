@@ -24,7 +24,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapTest.MapFragment">
+    tools:context=".MapTest.MapFragment01">
 
     <com.djowda.djowdageminimap.MapTest.Custom2DScrollView
         android:id="@+id/customScrollView"
@@ -144,7 +144,7 @@
     <!-- AI Chat Box -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:layout_gravity="bottom"
         android:background="@drawable/navigation_panel_background"
         android:orientation="horizontal"
@@ -158,10 +158,13 @@
             android:layout_weight="1"
             android:layout_marginEnd="8dp"
             android:background="@drawable/edittext_background"
-            android:hint="Ask AI to navigate (e.g., 'Navigate to cell 123')"
+            android:hint="Ask AI to navigate (e.g., 'Navigate to Canberra')"
+            android:textColorHint="@android:color/holo_orange_dark"
             android:inputType="textCapSentences"
             android:padding="12dp"
-            android:textSize="14sp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
             android:maxLines="2"
             android:scrollbars="vertical" />
 
