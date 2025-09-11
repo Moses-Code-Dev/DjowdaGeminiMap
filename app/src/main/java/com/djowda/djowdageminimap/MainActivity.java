@@ -31,7 +31,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.djowda.djowdageminimap.MapTest.MapFragment;
+import com.djowda.djowdageminimap.MapTest.MapFragment01;
 
 public class MainActivity extends AppCompatActivity {
 

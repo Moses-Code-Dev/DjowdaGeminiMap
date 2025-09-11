@@ -20,6 +20,8 @@
 
 plugins {
     alias(libs.plugins.android.application)
+    id("org.jetbrains.kotlin.plugin.serialization") version "2.2.20"
+    alias(libs.plugins.google.gms.google.services) // Use your Kotlin version
 }
 
 android {
@@ -46,8 +48,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
@@ -77,6 +79,14 @@ dependencies {
     implementation(libs.guava)
 
     implementation(libs.reactive.streams)
+
+
+    // Remove the Gson dependency if you are fully switching to Kotlin Serialization
+    // implementation("com.google.code.gson:gson:2.13.2")
+
+    // Add the Kotlinx Serialization JSON dependency
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0") // Use the latest stable version
+
 
 
 
