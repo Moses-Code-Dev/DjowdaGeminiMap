@@ -94,7 +94,7 @@ public class GeminiApiService {
         // Initialize the Gemini model with proper parameters
         model = GenerativeModelFutures.from(
                 FirebaseAI.getInstance(GenerativeBackend.googleAI())
-                        .generativeModel("gemini-2.0-flash-exp",
+                        .generativeModel("gemini-2.5-flash",
                                 null,  // generationConfig
                                 null,  // safetySettings
                                 List.of(Tool.functionDeclarations(List.of(getLocationTool))), // tools
